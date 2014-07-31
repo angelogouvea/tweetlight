@@ -5,10 +5,10 @@ class Tweets {
         require_once ('../codebird.php');
 
         // Twitter OAuth Settings:
-        $CONSUMER_KEY = '';
-        $CONSUMER_SECRET = '';
-        $ACCESS_TOKEN = '';
-        $ACCESS_TOKEN_SECRET = '';
+        $CONSUMER_KEY = ' ';
+        $CONSUMER_SECRET = ' ';
+        $ACCESS_TOKEN = ' ';
+        $ACCESS_TOKEN_SECRET = ' ';
 
         // Get authenticated:
         \Codebird\Codebird::setConsumerKey($CONSUMER_KEY, $CONSUMER_SECRET);
