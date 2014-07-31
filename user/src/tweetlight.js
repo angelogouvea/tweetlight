@@ -86,30 +86,30 @@ var Tweetlight = {
             return ""
         }
         if (d < e * 7) {
-            return "just now"
+            return "agora"
         }
         if (d < minute) {
-            return Math.floor(d / e) + " seconds ago"
+            return Math.floor(d / e) + " segundos atrás"
         }
         if (d < minute * 2) {
-            return "1 minute ago"
+            return "1 minuto atrás"
         }
         if (d < hour) {
-            return Math.floor(d / minute) + " minutes ago"
+            return Math.floor(d / minute) + " minutos atrás"
         }
         if (d < hour * 2) {
-            return "1 hour ago"
+            return "1 hora atrás"
         }
         if (d < day) {
-            return Math.floor(d / hour) + " hours ago"
+            return Math.floor(d / hour) + " horas atrás"
         }
         if (d > day && d < day * 2) {
-            return "yesterday"
+            return "ontem"
         }
         if (d < day * 365) {
-            return Math.floor(d / day) + " days ago"
+            return Math.floor(d / day) + " dias atrás"
         } else {
-            return "over a year ago"
+            return "mais de um ano"
         }
     },
     twitterLinks: function (text) {
